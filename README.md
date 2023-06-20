@@ -7,11 +7,11 @@ xray panel supporting multi-protocol, **Multi-lang (English,Chinese)**, **IP Res
 | Features        | Enable?           |
 | ------------- |:-------------:|
 | Multi-lang | :heavy_check_mark: |
-| [IP Restriction](https://github.com/HexaSoftwareTech/x-ui/#enable-ip-restrictions-per-inbound) | :heavy_check_mark: |
-| [Inbound Multi User](https://github.com/HexaSoftwareTech/x-ui/#enable-multi-user-traffic--exprire-day) | :heavy_check_mark: |
-| [Multi User Traffic & expire day](https://github.com/HexaSoftwareTech/x-ui/#enable-multi-user-traffic--exprire-day) | :heavy_check_mark: |
-| [REST API](https://github.com/HexaSoftwareTech/x-ui/pull/51) | :heavy_check_mark: |
-| [Telegram BOT](https://github.com/HexaSoftwareTech/x-ui/pull/110) | :heavy_check_mark: |
+| [IP Restriction](https://github.com/roz-beh/x-ui/#enable-ip-restrictions-per-inbound) | :heavy_check_mark: |
+| [Inbound Multi User](https://github.com/roz-beh/x-ui/#enable-multi-user-traffic--exprire-day) | :heavy_check_mark: |
+| [Multi User Traffic & expire day](https://github.com/roz-beh/x-ui/#enable-multi-user-traffic--exprire-day) | :heavy_check_mark: |
+| [REST API](https://github.com/roz-beh/x-ui/pull/51) | :heavy_check_mark: |
+| [Telegram BOT](https://github.com/roz-beh/x-ui/pull/110) | :heavy_check_mark: |
 
 **If you think this project is helpful to you, you may wish to give a** :star2: 
 
@@ -85,12 +85,12 @@ find this in config :
 # Install & Upgrade
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/HexaSoftwareTech/x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/roz-beh/x-ui/master/install.sh)
 ```
 
 ## Manual install & upgrade
 
-1. First download the latest compressed package from https://github.com/HexaSoftwareTech/x-ui/releases , generally choose Architecture `amd64`
+1. First download the latest compressed package from https://github.com/roz-beh/x-ui/releases , generally choose Architecture `amd64`
 2. Then upload the compressed package to the server's `/root/` directory and `root` rootlog in to the server with user
 
 > If your server cpu architecture is not `amd64` replace another architecture
@@ -110,7 +110,7 @@ systemctl restart x-ui
 
 ## Install using docker
 
-> This docker tutorial and docker image are provided by [HexaSoftwareTech](https://github.com/HexaSoftwareTech)
+> This docker tutorial and docker image are provided by [roz-beh](https://github.com/roz-beh)
 
 1. install docker
 
@@ -126,7 +126,7 @@ docker run -itd --network=host \
     -v $PWD/db/:/etc/x-ui/ \
     -v $PWD/cert/:/root/cert/ \
     --name x-ui --restart=unless-stopped \
-    HexaSoftwareTech/x-ui:latest
+    roz-beh/x-ui:latest
 ```
 
 > Build your own image
@@ -207,4 +207,4 @@ x-ui v2-ui
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/HexaSoftwareTech/x-ui.svg)](https://starchart.cc/HexaSoftwareTech/x-ui)
+[![Stargazers over time](https://starchart.cc/roz-beh/x-ui.svg)](https://starchart.cc/roz-beh/x-ui)
